@@ -1,7 +1,8 @@
 /*! * Start Bootstrap - Agency v5.0.2 (https://startbootstrap.com/template-overviews/agency) * Copyright 2013-2018 Start Bootstrap * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE) */
 body {
      overflow-x: hidden;
-     font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
+     font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+     background: #AA85A6;
 }
  p {
      line-height: 1.75
@@ -166,8 +167,11 @@ body {
      text-transform: none
 }
  .team-member {
-     margin-bottom: 50px;
-     text-align: center
+     text-align: center;
+     margin-top: 50px;
+     padding-bottom: 30px;
+     padding-top: 30px;
+     background: #E1E1E1
 }
  .team-member img {
      width: 225px;
@@ -199,4 +203,3 @@ body {
      text-transform: none;
      font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
 }
- 

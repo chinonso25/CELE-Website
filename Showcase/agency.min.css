@@ -4,7 +4,8 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */body {
      overflow-x: hidden;
-     font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
+     font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+     background:#B2CA6D
  }
 
  p {
@@ -312,8 +313,7 @@
  }
 
  .portfolio-modal {
-     padding-right: 20vw!important;
-     padding-left: 20vw!important
+   padding-right: 0px !important
  }
 
  .portfolio-modal .modal-dialog {
