@@ -1,5 +1,5 @@
 /*! * Start Bootstrap - Agency v5.0.2 (https://startbootstrap.com/template-overviews/agency) * Copyright 2013-2018 Start Bootstrap * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE) */
-body {
+ body {
      overflow-x: hidden;
      font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
      background: #AA85A6;
@@ -188,7 +188,8 @@ body {
 }
  footer {
      padding: 25px 0;
-     text-align: center
+     text-align: center;
+     background: #ECEFF1
 }
  footer span.copyright {
      font-size: 90%;
@@ -203,3 +204,4 @@ body {
      text-transform: none;
      font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
 }
+ 
