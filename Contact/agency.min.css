@@ -168,9 +168,9 @@
 }
  .team-member {
      text-align: center;
-     margin-top: 50px;
-     padding-bottom: 30px;
-     padding-top: 30px;
+     margin-top: 30px;
+     padding-bottom: 20px;
+     padding-top: 20px;
      background: #E1E1E1
 }
  .team-member img {
@@ -178,7 +178,7 @@
      height: 225px;
 }
  .team-member h4 {
-     margin-top: 25px;
+     margin-top: 20px;
      margin-bottom: 0;
      text-transform: none
 }

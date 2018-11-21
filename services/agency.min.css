@@ -187,9 +187,11 @@ body {
      margin: 15px 0;
      text-transform: none
 }
- services {
-     background: #ECEFF1
+
+#services {
+     background: #fff
 }
+
  footer {
      padding: 25px 0;
      text-align: center;
@@ -227,4 +229,3 @@ body {
  ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
      background-color: #fed136
 }
- 
