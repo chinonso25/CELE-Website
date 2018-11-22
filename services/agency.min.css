@@ -130,7 +130,7 @@ body {
      #mainNav.navbar-shrink {
          padding-top: 0;
          padding-bottom: 0;
-         background-color: #FFCC33
+         background-color: #ffa000
     }
      #mainNav.navbar-shrink .navbar-brand {
          font-size: 1.25em;
@@ -183,10 +183,7 @@ body {
          font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
     }
 }
- .service-heading {
-     margin: 15px 0;
-     text-transform: none
-}
+
 
 #services {
      background: #fff
