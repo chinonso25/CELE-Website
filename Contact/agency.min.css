@@ -2,7 +2,7 @@
  body {
      overflow-x: hidden;
      font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-     background:#389CF1 ;
+
 }
  p {
      line-height: 1.75
@@ -246,3 +246,5 @@ video {
   text-align: center;
   font-weight: bold;
 }
+
+#mapid { height: 180px; }

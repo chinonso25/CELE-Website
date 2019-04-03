@@ -226,3 +226,12 @@ body {
  ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
      background-color: #fed136
 }
+
+.card-{
+  height: 70%;
+}
+
+.scrollable{
+  overflow-y: auto;
+  max-height: 240px;
+}

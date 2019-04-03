@@ -17,6 +17,10 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+
     <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
     <style>
         video {
@@ -70,36 +74,123 @@
     </header>
     <!-- Team -->
 
-    
 
-<section id="details" style="background:#cfd8dc; color=#29434e">
+
+<section id="details">
 
     <div class="container">
   	<div class="row">
-  		    <div class="col-md-4">
+      <div class="container">
+<div class="row">
+    <div class="col-md-6">
+        <div class="well well-sm">
+            <form class="form-horizontal" method="post">
+                <fieldset>
+                    <legend class="text-center header" style="background-color: #F5F5F5;
+                    color: #36A0FF;
+                    height: 70px;
+                    font-size: 27px;
+                    padding: 10px;">Contact us</legend>
+                    <div class="form-group">
+                        <div class="col-md-10 col-md-offset-1">
+                            <input id="fname" name="name" type="text" placeholder="First Name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-10 col-md-offset-1">
+                            <input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">
+                        </div>
+                    </div>
 
-  			</div>
-  			<div class="col-md-4">
-  			<div class="col-md-12 foundation">
-  			   <h3>Centre for Excellence in Learning Enhancement (CELE)</h3>
-  			  <div class="col-md-12 foundation_sm">
-  			     <ul>
-              <li><i class="fa fa-envelope" aria-hidden="true"></i>Coventry University<br>Priory Street<br>Coventry<br>CV1 5FB<br>United Kingdom<br></li>
-  				   <li><i class="fa fa-envelope-o" aria-hidden="true"></i>info-cele@coventry.ac.uk</li>
-             <li><i class="fa fa-phone" aria-hidden="true"></i>+44 (0)24 7765 7810 </li>
-             <li><i class="fa fa-globe" aria-hidden="true"></i><a href="cele.coventry.ac.uk">cele.coventry.ac.uk</a></li>
+                    <div class="form-group">
+                        <div class="col-md-10 col-md-offset-1">
+                            <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-10 col-md-offset-1">
+                            <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-10 col-md-offset-1">
+                            <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-12 text-center">
+                            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div>
+            <div class="panel panel-default">
+                <div class="text-left header" style="background-color: #F5F5F5;
+                color: #36A0FF;
+                height: 70px;
+                font-size: 27px;
+                padding: 10px;">Our Office</div>
+                <div class="panel-body text-center">
+                    <h4>Address</h4>
+                    <div>
+                    Richard Crossman Building<br />
+                    Coventry University<br />
+                    Priory Street<br />
+                    CV1 5FB<br />
+                    United Kingdom<br />
+                  +44 (0)24 7765 7810<br />
+                  info-cele@coventry.ac.uk<br />
+                    </div>
+                    <hr />
+<div id="mapid" style="min-width: 300px; min-height: 300px; width: 100%; height: 100%;" ></div>
+    <script>
+
+var mymap = L.map('mapid').setView([52.4067, -1.5051], 16);
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox.streets',
+    accessToken: 'pk.eyJ1IjoiY2hpbm9uc28yNSIsImEiOiJjanUxMmM1cXEwcWE0NDVwOW5xOXZmd2tmIn0.0sibHxt4WQBOW54h1XYCqw'
+}).addTo(mymap);
+var marker = L.marker([52.4067, -1.5051]).addTo(mymap);
+marker.bindPopup("<b>Our Office</b><br>Richard Crossman Building").openPopup();
+
+      </script>
 
 
-  			  </div>
-  			</div>
-  			</div>
+ </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
 
 
   	</div>
   </div>
 
     </section>
+    <style>
 
+
+        .header {
+            background-color: #F5F5F5;
+            color: #36A0FF;
+            height: 70px;
+            font-size: 27px;
+            padding: 10px;
+        }
+    </style>
     <!-- Footer -->
     <footer>
         <div class="container">
