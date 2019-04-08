@@ -327,3 +327,12 @@ video {
   text-align: center;
   font-weight: bold;
 }
+
+.card-{
+  height: 70%;
+}
+
+.scrollable{
+  overflow-y: auto;
+  max-height: 240px;
+}
