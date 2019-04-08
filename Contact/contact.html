@@ -22,6 +22,8 @@
  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
 
     <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
+    <script>document.addEventListener('touchstart', onTouchStart, {passive: true});</script>
+
     <style>
         video {
             width: 100vw;
@@ -66,10 +68,7 @@
               <source src="../animations/STAFF_Master.ogv" type="video/ogg">
               <img src="../animations/Staff_Still.jpg" title="Your browser does not support the <video> tag">
             </video>
-            <div class="overlay-desc">
-                <p class="Headie">
-                    CELE Staff</p>
-            </div>
+            
         </div>
     </header>
     <!-- Team -->
