@@ -235,3 +235,85 @@ body {
   overflow-y: auto;
   max-height: 240px;
 }
+
+/* FOOTER */
+.footer p {
+    font-size: 0.875em;
+    line-height: 1.45em;
+    color:#4d4d4d;
+      }
+  .footer-container {
+    background-color: #e4e4e4;
+    padding: 40px 0px;
+      }
+  .awards-container {
+    background-color: #000;
+    padding: 40px 0px;
+      }
+  .footer h3 {
+    color: #222222;
+    font-size: 1.85rem;
+    font-weight: 600;
+  }
+  .footer ul {
+    list-style: none;
+    padding: 0;
+    font-size: 0.875em;
+  }
+  .footer li {
+    padding-left: 1.1em;
+      line-height: 1.4em;
+  }
+  .footer li:before {
+    content: "\f105"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.1em; /* same as padding-left set on li */
+    width: 1.1em; /* same as padding-left set on li */
+      color: #0099CC;
+  }
+  .footer a {color: #4d4d4d;}
+  .footer a:hover {color: #0099CC;}
+  .footer-connected a:link, .footer-connected i {margin-top:2px; margin-bottom: 10px;}
+  .footer-connected i {font-size: 28px;}
+  .youku-logo {
+    width: 36px;
+    height: 28px;
+    background-position:0px 0px;
+    display: inline-block;
+    text-indent: -9999px;
+    background-image: url(https://www.coventry.ac.uk/Static/Assets/images/youku-logo.png);
+    line-height:28px;
+      margin-top: -10px !important;
+  }
+  .youku-logo:hover {
+  background-position:0px 28px;
+  }
+  .cusu-logo {
+      height: 28px;
+      width: 72px;
+      background-position:0px 0px;
+      display: inline-block;
+      text-indent: -9999px;
+      background-image:url(https://www.coventry.ac.uk/Static/Assets/images/cusu-logo.png);
+      line-height:28px;
+      }
+  .cusu-logo:hover{
+      background-position:0px 28px;
+      }
+  .copyright-container {
+    font-size: 0.667em;
+    padding: 12px 0px;
+    background-color: #0861ce;
+    color: #fff;
+  }
+  .copyright-container a {color: #FFF; padding-left: 7px; padding-right: 7px;}
+  .copyright-container a:hover {text-decoration: underline; color: #000;}
+  .copyright-container a:first-child {padding-left: 0px;}
+  .copyright-container a:last-child {padding-right: 0px;}
+  @media only screen and (max-width : 480px) {
+      .landscape-mobile-6col {
+          display: block;
+          width: 100% !important;
+      }
+  }
